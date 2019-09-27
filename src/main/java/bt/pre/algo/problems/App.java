@@ -1,5 +1,6 @@
 package bt.pre.algo.problems;
 
+import java.time.Instant;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -40,7 +41,8 @@ public class App {
         System.out.println(new Date(app.roundOffTimeStamp(c.getTimeInMillis(), 3600)));
         System.out.println(new Date(app.roundOffTimeStamp(c.getTimeInMillis(), 7200)));
         
-        
+        System.out.println(System.currentTimeMillis());
+        System.out.println(Instant.now().toEpochMilli());
     }
     
     private long roundOffTimeStamp(long timestamp, int interval) {
