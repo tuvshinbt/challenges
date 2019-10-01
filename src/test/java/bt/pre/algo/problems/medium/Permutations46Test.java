@@ -1,6 +1,6 @@
 package bt.pre.algo.problems.medium;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,8 +1,6 @@
 package bt.pre.algo.stream;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 import static java.util.stream.Collectors.*;
 
 import java.util.Arrays;
