@@ -60,12 +60,3 @@ public class RotateList61 {
         return newHead;
     }
 }
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}
