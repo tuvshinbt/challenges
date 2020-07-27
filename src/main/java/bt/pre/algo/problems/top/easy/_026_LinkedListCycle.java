@@ -1,0 +1,43 @@
+package bt.pre.algo.problems.top.easy;
+
+public class _026_LinkedListCycle {
+	public boolean hasCycle(ListNode head) {
+
+		if (head == null)
+			return false;
+
+		ListNode fast = head;
+		ListNode slow = null;
+		int step = 0;
+
+		while (fast != null && fast != slow) {
+			if (step % 2 == 0) {
+				if (step == 0) {
+					slow = head;
+				} else {
+					slow = slow.next;
+				}
+			}
+			fast = fast.next;
+			step++;
+		}
+		return fast != null;
+	}
+
+	public boolean hasCycleSolution(ListNode head) {
+		if (head == null || head.next == null) {
+			return false;
+		}
+		ListNode slow = head;
+		ListNode fast = head;
+		while (fast != null && fast.next != null) {
+			slow = slow.next;
+			fast = fast.next.next;
+			if (fast == slow) {
+				return true;
+			}
+
+		}
+		return false;
+	}
+}
